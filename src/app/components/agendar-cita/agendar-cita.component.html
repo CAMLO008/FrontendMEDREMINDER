@@ -1,0 +1,48 @@
+<div class="container">
+  <h2 class="text-center mb-4">Agendar Cita</h2>
+  <form>
+      <!-- Nombre del Paciente -->
+      <div class="form-group">
+          <label for="nombrePaciente">Nombre del Paciente</label>
+          <input type="text" class="form-control" id="nombrePaciente" placeholder="Ingresa el nombre del paciente" required>
+          <small class="form-text text-muted">Por favor, ingresa el nombre completo del paciente.</small>
+      </div>
+
+      <!-- Número de Teléfono -->
+      <div class="form-group">
+          <label for="telefonoPaciente">Número de Teléfono</label>
+          <input type="tel" class="form-control" id="telefonoPaciente" placeholder="Ej: +57 300 000 0000" required>
+          <small class="form-text text-muted">Ejemplo: +57 300 000 0000</small>
+      </div>
+
+      <!-- Motivo de la Cita -->
+      <div class="form-group">
+          <label for="motivoCita">Motivo de la Cita</label>
+          <select class="form-control" id="motivoCita" required>
+              <option value="">Selecciona un motivo</option>
+              <option value="Consulta">Consulta</option>
+              <option value="Control">Control</option>
+              <option value="Urgente">Urgente</option>
+              <option value="Otros">Otros</option>
+          </select>
+          <small class="form-text text-muted">Selecciona el motivo de la cita.</small>
+      </div>
+
+      <!-- Fecha de la Cita -->
+      <div class="form-group">
+          <label for="fechaCita">Fecha de la Cita</label>
+          <input type="date" class="form-control" id="fechaCita" required>
+          <small class="form-text text-muted">Selecciona la fecha de la cita.</small>
+      </div>
+
+      <!-- Hora de la Cita -->
+      <div class="form-group">
+          <label for="horaCita">Hora de la Cita</label>
+          <input type="time" class="form-control" id="horaCita" required>
+          <small class="form-text text-muted">Selecciona la hora de la cita.</small>
+      </div>
+
+      <!-- Botón de envío -->
+      <button type="submit" class="btn btn-primary btn-block">Agendar Cita</button>
+  </form>
+</div>
